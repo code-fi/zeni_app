@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/search_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_close"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/region_text"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier=".7"
+        android:text="@string/search_for_ads_near_you"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_close_btn" />
+
+    <TextView
+        android:id="@+id/l"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/browser_by_region_amp_city"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/region_text"
+        app:layout_constraintTop_toBottomOf="@id/region_text" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/region_select"
+        style="@style/ZeniAfrik.Spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/gh_regions_array"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/city_select"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:spinnerMode="dialog"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/region_select" />
+
+    <TextView
+        android:id="@+id/show_fll"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/more_search_filter"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@id/region_text"
+        app:layout_constraintTop_toBottomOf="@id/city_select" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/filter_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:padding="2dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/show_fll">
+
+        <EditText
+            android:id="@+id/product_name"
+            style="@style/ZeniAfrik.Input"
+            android:hint="@string/product_name"
+            android:inputType="textCapWords"
+            android:maxLength="60"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/category_select"
+            style="@style/ZeniAfrik.Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_name" />
+
+        <EditText
+            android:id="@+id/price_min"
+            style="@style/ZeniAfrik.Input"
+            android:layout_width="0dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/min_price"
+            android:inputType="number"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@id/price_max"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/category_select" />
+
+        <EditText
+            android:id="@+id/price_max"
+            style="@style/ZeniAfrik.Input"
+            android:layout_width="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="@string/max_price"
+            android:inputType="number"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/price_min"
+            app:layout_constraintTop_toTopOf="@id/price_min" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/search_button"
+        style="@style/ZeniAfrik.Button"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/sourcesanspro_bold"
+        android:text="@string/search"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

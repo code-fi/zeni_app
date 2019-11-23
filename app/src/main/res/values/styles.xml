@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ZeniAfrik" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ZeniAfrik.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="android:colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ZeniAfrik.SocialButton" parent="ZeniAfrik.Button">
+        <item name="android:layout_width">220dp</item>
+    </style>
+
+    <style name="ZeniAfrik.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@color/buttonPrimary</item>
+
+        <item name="android:textColor">#fff</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ZeniAfrik.RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#dbdbdb</item>
+        <item name="colorControlActivated">@color/duskYellow</item>
+    </style>
+
+    <style name="ZeniAfrik.Progress" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ZeniAfrik.TextView" parent="Base.TextAppearance.AppCompat">
+
+    </style>
+
+    <style name="ZeniAfrik.TextView.Large" parent="@style/Base.TextAppearance.AppCompat.Large">
+
+    </style>
+
+    <style name="ZeniAfrik.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ZeniAfrik.Toolbar.Subtitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+
+    </style>
+
+    <style name="ZeniAfrik.CollapsingToolbar">
+
+    </style>
+
+    <style name="ZeniAfrik.DialogFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="ZeniAfrik.Spinner" parent="Base.Widget.AppCompat.Spinner.Underlined">
+
+    </style>
+    <style name="ZeniAfrik.Input" parent="Widget.AppCompat.EditText">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ZeniAfrik.TextView.Medium" parent="ZeniAfrik.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+
+    </style>
+</resources>

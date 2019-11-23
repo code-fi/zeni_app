@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5ffef"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/verified_image"
+        android:src="@drawable/verified" />
+
+    <TextView
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="@string/this_product_has_been_verified_by_zeniafrik_for_quality_and_it_s_100_buyer_safe"
+        android:textStyle="bold" />
+</LinearLayout>

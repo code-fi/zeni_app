@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.zeniafrik.ui.market.HomeActivity">
+    <item
+        android:id="@+id/action_main"
+        android:icon="@drawable/ic_basket"
+        android:orderInCategory="10"
+        android:title="@string/browse" />
+    <item
+        android:id="@+id/action_category"
+        android:icon="@drawable/ic_category"
+        android:orderInCategory="11"
+        android:title="@string/category"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_account"
+        android:icon="@drawable/ic_account"
+        android:orderInCategory="13"
+        android:title="@string/account"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_feed"
+        android:icon="@drawable/ic_feed"
+        android:orderInCategory="14"
+        android:title="@string/feed"
+        app:showAsAction="collapseActionView" />
+
+</menu>

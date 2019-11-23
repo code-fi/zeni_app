@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@drawable/product_background"
+    android:maxHeight="170dp"
+    android:minHeight="160dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/product_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:focusable="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:actualImageScaleType="centerCrop"
+            app:fadeDuration="400"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholderImageScaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_image"
+            tools:text="Grand Mayaky" />
+
+        <TextView
+            android:id="@+id/product_price"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616161"
+            app:layout_constraintStart_toStartOf="@id/product_name"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            tools:text="GHc 274" />
+
+        <TextView
+            android:id="@+id/seller"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/product_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            app:layout_constraintStart_toEndOf="@id/product_price"
+            tools:text="Dela Labe" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

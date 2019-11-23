@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="680dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="32dp">
+
+    <TextView
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:text="@string/login_intro"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phone_input"
+        style="@style/ZeniAfrik.Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawableTint="#616161"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="#dbdbdb" />
+
+    <EditText
+        android:id="@+id/password_input"
+        style="@style/ZeniAfrik.Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableTint="#616161"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="@string/forgot_your_password"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/ZeniAfrik.Button"
+        android:layout_marginTop="16dp"
+        android:text="@string/login"
+        android:textAppearance="@style/ZeniAfrik.TextView" />
+
+    <TextView
+        android:id="@+id/open_register"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="@string/become_a_member"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <include
+        layout="@layout/social_buttons_component"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

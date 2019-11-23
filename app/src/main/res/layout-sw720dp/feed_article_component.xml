@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/feed_image"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:background="#fafafa"
+        app:actualImageScaleType="focusCrop"
+        app:progressBarAutoRotateInterval="1000"
+        app:progressBarImage="@drawable/spin" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/feed_title"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#313131"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/feed_time"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/feed_category"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</LinearLayout>

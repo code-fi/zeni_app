@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:showIn="@layout/basic_user_dashboard">
+    <TextView
+        android:id="@+id/error_notice"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warn_bg"
+        android:drawableLeft="@drawable/ic_warn"
+        android:drawableStart="@drawable/ic_warn"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:text="@string/you_need_to_complete_your_profile_information_now"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
+    <ImageView
+        android:id="@+id/im"
+        android:src="@drawable/shop_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+    <LinearLayout
+        android:layout_toRightOf="@id/im"
+        android:layout_toEndOf="@id/im"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/error_notice">
+
+        <TextView
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            style="@style/ZeniAfrik.TextView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/membership"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:text="Member since 2009"/>
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:textColor="#424242" />
+
+        <TextView
+            android:id="@+id/edit"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="@string/update_personal_info"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
+
+

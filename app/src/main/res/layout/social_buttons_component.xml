@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/orlayour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#9e9e9e" />
+
+        <TextView
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="OR"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#9e9e9e" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/facebookBtn"
+        style="@style/ZeniAfrik.SocialButton"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/facebook_button"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/login_via_facebook"
+        android:textAppearance="@style/ZeniAfrik.TextView"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orlayour" />
+
+    <Button
+        android:id="@+id/googleBtn"
+        style="@style/ZeniAfrik.SocialButton"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/google_plus_button"
+        android:drawableLeft="@drawable/ic_google_plus"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_google_plus"
+        android:text="@string/login_via_google"
+        android:textAppearance="@style/ZeniAfrik.TextView"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebookBtn"
+        app:layout_constraintVertical_bias="0.025" />
+
+</android.support.constraint.ConstraintLayout>

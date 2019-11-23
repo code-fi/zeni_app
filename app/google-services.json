@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "45835377760",
+    "firebase_url": "https://zeniafrik-f69ce.firebaseio.com",
+    "project_id": "zeniafrik-f69ce",
+    "storage_bucket": "zeniafrik-f69ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45835377760:android:1d822c53a210783f",
+        "android_client_info": {
+          "package_name": "org.zeniafrik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45835377760-sae8ih325irj2be24hiamv5armh9ljcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZIeDf_q7cG_nlwfo_hmlFSmEQJWXrDBQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

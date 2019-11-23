@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:orientation="vertical">
+
+        <include layout="@layout/post_product_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/ZeniAfrik.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_camera"
+                android:text="@string/upload_maximum_of_3_photos"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/image_list"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+        </LinearLayout>
+
+        <include layout="@layout/post_product_x2_form" />
+
+        <include layout="@layout/post_product_extra_form" />
+        <TextView
+            android:id="@+id/tns"
+            style="@style/ZeniAfrik.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_warn"
+            android:drawableStart="@drawable/ic_warn"
+            android:text="@string/by_clicking_post_ad_you_accept_our_terms_of_use"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

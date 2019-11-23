@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/product_background"
+        android:contentDescription="@string/share_product_to_friends"
+        android:src="@drawable/ic_share" />
+
+    <ImageButton
+        android:id="@+id/rate_btn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/product_background"
+        android:contentDescription="@string/share_product_to_friends"
+        android:src="@drawable/ic_review" />
+
+    <Button
+        android:id="@+id/action_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/buttonPrimary"
+        android:text="@string/call_seller"
+        android:textAppearance="@style/ZeniAfrik.TextView"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

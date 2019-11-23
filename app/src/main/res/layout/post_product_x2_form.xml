@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/share_btn"
+        style="@style/ZeniAfrik.TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ad_details"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location"
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/provide_valid_information_for_the_fields_below"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/share_btn"
+        app:layout_constraintTop_toBottomOf="@id/share_btn" />
+
+    <EditText
+        android:id="@+id/product_name"
+        style="@style/ZeniAfrik.Input"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/product_name"
+        android:inputType="textCapWords"
+        android:maxLength="60"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/product_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location" />
+
+    <EditText
+        android:id="@+id/product_price"
+        style="@style/ZeniAfrik.Input"
+        android:layout_width="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:maxLength="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/product_name"
+        app:layout_constraintTop_toTopOf="@id/product_name" />
+
+
+    <EditText
+        android:id="@+id/product_abt"
+        style="@style/ZeniAfrik.Input"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:maxLength="5000"
+        android:maxLines="30"
+        android:minLines="5"
+        app:layout_constraintTop_toBottomOf="@id/product_name" />
+</android.support.constraint.ConstraintLayout>

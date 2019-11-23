@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.market.ProductDetailActivity">
+
+    <include layout="@layout/app_bar_component" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/action_panel"
+        app:layout_constraintTop_toBottomOf="@+id/appLayout"
+        tools:ignore="UnknownIdInLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/product_gallery_slide"
+                android:name="org.zeniafrik.ui.market.ProductGalleryFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/image_slider_component" />
+
+            <include layout="@layout/product_meta_component" />
+
+            <include layout="@layout/product_extra_component" />
+
+            <include layout="@layout/product_about_component" />
+
+            <include layout="@layout/buyer_guarantee_view" />
+
+            <fragment
+                android:id="@+id/similar_product"
+                android:name="org.zeniafrik.ui.market.ProductSimilarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/product_similar_component" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        layout="@layout/product_actions_component" />
+</android.support.constraint.ConstraintLayout>

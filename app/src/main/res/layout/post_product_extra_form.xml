@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        style="@style/ZeniAfrik.TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/extra_description"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colors"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/product_colors"
+        style="@style/ZeniAfrik.Input"
+        android:hint="@string/any_color"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/size"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/product_sizes"
+        style="@style/ZeniAfrik.Input"
+        android:hint="@string/any_size"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        style="@style/ZeniAfrik.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/ad_target_group"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/product_gender_select"
+        style="@style/ZeniAfrik.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/gender_select_array" />
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/ZeniAfrik.Button"
+        android:layout_width="150dp"
+        android:text="@string/post_ad"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp" />
+</LinearLayout>
